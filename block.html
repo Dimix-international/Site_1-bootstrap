@@ -1,0 +1,315 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Creative agency</title>
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- Подключаем иконочный шрифт font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+		<!-- Подключаем Bootstrap -->
+		<link rel="stylesheet" href="dist/css/bootstrap.css">
+    <!-- Подключаем baguetbox для картинок в галерее при клике - модальные окна -->
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <!-- Описание стилей для прелоадера из Bootstrap -->
+     <!--Подключаем в самом конце после проверки всех ошибок!-->
+      <style>
+        .preloader{/*растянули на всю страницу, перекрыв все элементы*/
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 9999;
+          background-color: #fefefe;
+        }
+      </style>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta charset="UTF-8">
+		<!-- Отключение самодеятельности андроид(телефон не ссылка) -->
+		<meta name="format-detection" content="telephone=no">
+		<!-- Мета теги для SEO -->
+		<!-- Краткое описание страницы -->
+		<meta name="description" content="store">
+		<!--Ключевые слова страницы(не более 20)-->
+		<meta name="keywords" content="Business, html5, CCS3, верстка страницы">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+    <!--Прелоадер. Подключаем в самом конце после проверки всех ошибок!-->
+    <div class="preloader d-flex justify-content-center align-items-center"><!-- Скрытие процесса загрузки -->
+      <div class="spinner-border text-danger " style="width: 10rem; height: 10rem;"  role="status"> <!-- Спиннер Bootstrap. Style-размеры спинера -->
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <div class="scrolltop"><!-- Кнопка вверх при прокрутке страницы-->
+      <i class="fas fa-angle-double-up"></i><!-- Стрелка из font awesome-->
+    </div>
+
+    <header class="header-blog">
+      <div class="header-blog__body">
+        <div class="header-blog__navbar">
+          <!-- Navbar bootstrap -->
+          <nav class="navbar navbar-expand-lg bg-dark">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="logo">
+              BlueRex
+            </a>
+            <!-- Бургер-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i> <!--  Иконка Бургер с иконочного шрифта-->
+            </button>
+            <!-- конец бургера -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto"><!-- Меню слева ml-auto -->
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="block.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="blog-content">
+      <div class="container">
+        <div class="row">
+          <div class=" blog-content__articles col-lg-8">
+            <article class="blog-content__article article">
+              <div class="article__title">
+                <a href="single.html"> Lorem, ipsum, dolor.</a>
+              </div>
+              <div class="article__date">
+                <span>
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  14.09.2020
+                </span>
+              </div>
+              <div class="article__exerpt">
+                <div class="row">
+                  <div class="article__image col-sm-auto">
+                   <a href="single.html"><img class="thumb" src="https://picsum.photos/250/170" alt=""></a>
+                 </div>
+                 <div class="article__body col">
+                   <div class="article__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laboriosam ducimus expedita blanditiis dolore nemo laudantium nulla eos, quisquam animi.
+                  </div>
+                  <div class="article__btn">
+                    <a href="single.html"><span>Read more</span></a>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </article>
+            <article class="blog-content__article article">
+              <div class="article__title">
+                <a href="single.html"> Lorem, ipsum, dolor.</a>
+              </div>
+              <div class="article__date">
+                <span>
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  14.09.2020
+                </span>
+              </div>
+              <div class="article__exerpt">
+                <div class="row">
+                  <div class="article__image col-sm-auto">
+                   <a href="single.html"><img class="thumb" src="https://picsum.photos/250/170" alt=""></a>
+                 </div>
+                 <div class="article__body col">
+                   <div class="article__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laboriosam ducimus expedita blanditiis dolore nemo laudantium nulla eos, quisquam animi.
+                  </div>
+                  <div class="article__btn">
+                    <a href="single.html"><span>Read more</span></a>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </article>
+            <article class="blog-content__article article">
+              <div class="article__title">
+                <a href="single.html"> Lorem, ipsum, dolor.</a>
+              </div>
+              <div class="article__date">
+                <span>
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  14.09.2020
+                </span>
+              </div>
+              <div class="article__exerpt">
+                <div class="row">
+                  <div class="article__image col-sm-auto">
+                   <a href="single.html"><img class="thumb" src="https://picsum.photos/250/170" alt=""></a>
+                 </div>
+                 <div class="article__body col">
+                   <div class="article__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laboriosam ducimus expedita blanditiis dolore nemo laudantium nulla eos, quisquam animi.
+                  </div>
+                  <div class="article__btn">
+                    <a href="single.html"><span>Read more</span></a>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </article>
+            <!-- Пагинация Bootstrap-->
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="blog-content__sidebar sidebar col-lg-4">
+            <div class="row justify-content-end">
+              <div class="sidebar-widget widget-categories col-lg-6">
+                <div class="sidebar__title">
+                  Categories
+                </div>
+                <!-- Список Bootstrap-->
+                <div class="sidebar-list list-group">
+                  <a href="#" class="list-group-item list-group-item-action active">Category 1</a>
+                  <a href="#" class="list-group-item list-group-item-action">Category 2</a>
+                  <a href="#" class="list-group-item list-group-item-action">Category 3</a>
+                  <a href="#" class="list-group-item list-group-item-action">Category 4</a>
+                  <a href="#" class="list-group-item list-group-item-action">Category 5</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quick-links">
+      <div class="container">
+        <div class="row">
+         <div class="quick-links__body col-lg-5 text-center text-lg-left">
+            <div class="row">
+              <div class="quick-links__column column col-6">
+                <div class="column__title">
+                  Company
+                </div>
+                <div class="column__list">
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="quick-links__column column col-6">
+                <div class="column__title">
+                  Company
+                </div>
+                <div class="column__list">
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="quick-links__column column col-6">
+                <div class="column__title">
+                  Company
+                </div>
+                <div class="column__list">
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="quick-links__column column col-6">
+                <div class="column__title">
+                  Company
+                </div>
+                <div class="column__list">
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quick-links__images col-lg-7 text-center text-lg-left">
+            <div class="row">
+              <div class="quick-links__image col-6">
+                <img src="img/footer-img1.png" alt="links">
+              </div>
+              <div class="quick-links__image col-6">
+                <img src="img/footer-img2.png" alt="links">
+              </div>
+              <div class="quick-links__image col-6">
+                <img src="img/footer-img3.png" alt="links">
+              </div>
+              <div class="quick-links__image col-6">
+                <img src="img/footer-img4.png" alt="links">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+          <ul class="list-group footer__list">
+            <li class="list-group-item order-4 order-md-1"><span>© 2022 Theme by psdfreebies.com</span></li>
+            <li class="list-group-item order-1 order-md-2"><a href="#">Privacy</a></li>
+            <li class="list-group-item order-2 order-md-3"><a href="#">Terms of Use</a></li>
+            <li class="list-group-item order-3 order-md-4"><a href="#">Site Map</a></li>
+          </ul>
+      </div>
+    </footer>
+		<script src="js/jquery-3.5.1.min.js" ></script> <!-- С официального сайта -->
+		<script src="js/popper.min.js"></script>
+		<script src="dist/js/bootstrap.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/main.js"></script>
+	</body>
+</html>

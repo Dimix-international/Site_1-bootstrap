@@ -1,0 +1,217 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Creative agency</title>
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- Подключаем иконочный шрифт font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+		<!-- Подключаем Bootstrap -->
+		<link rel="stylesheet" href="dist/css/bootstrap.css">
+    <!-- Подключаем baguetbox для картинок в галерее при клике - модальные окна -->
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <!-- Описание стилей для прелоадера из Bootstrap -->
+     <!--Подключаем в самом конце после проверки всех ошибок!-->
+      <style>
+        .preloader{/*растянули на всю страницу, перекрыв все элементы*/
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 9999;
+          background-color: #fefefe;
+        }
+      </style>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta charset="UTF-8">
+		<!-- Отключение самодеятельности андроид(телефон не ссылка) -->
+		<meta name="format-detection" content="telephone=no">
+		<!-- Мета теги для SEO -->
+		<!-- Краткое описание страницы -->
+		<meta name="description" content="store">
+		<!--Ключевые слова страницы(не более 20)-->
+		<meta name="keywords" content="Business, html5, CCS3, верстка страницы">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+    <!--Прелоадер. Подключаем в самом конце после проверки всех ошибок!-->
+    <div class="preloader d-flex justify-content-center align-items-center"><!-- Скрытие процесса загрузки -->
+      <div class="spinner-border text-danger " style="width: 10rem; height: 10rem;"  role="status"> <!-- Спиннер Bootstrap. Style-размеры спинера -->
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <div class="scrolltop"><!-- Кнопка вверх при прокрутке страницы-->
+      <i class="fas fa-angle-double-up"></i><!-- Стрелка из font awesome-->
+    </div>
+
+    <header class="header-blog">
+      <div class="header-blog__body">
+        <div class="header-blog__navbar">
+          <!-- Navbar bootstrap -->
+          <nav class="navbar navbar-expand-lg bg-dark">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="logo">
+              BlueRex
+            </a>
+            <!-- Бургер-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i> <!--  Иконка Бургер с иконочного шрифта-->
+            </button>
+            <!-- конец бургера -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto"><!-- Меню слева ml-auto -->
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="block.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="blog-content">
+      <div class="container">
+          <div class=" blog-content__articles col">
+            <article class="blog-content__article article text-center">
+              <div class="article__title">
+                Lorem, ipsum, dolor.
+              </div>
+              <div class="article__date">
+                <span>
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  14.09.2020
+                </span>
+              </div>
+              <div class="single__exerpt text-left">
+                <img class="thumb" src="https://picsum.photos/400/300" alt="">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Est velit repellendus doloremque odit voluptatibus eaque omnis dolorum eligendi voluptatem, cupiditate. Tempora illo dolores expedita animi repellat, nemo eos atque dolorem. Vitae, repellendus commodi, dignissimos expedita quo nemo, corporis excepturi quod fugit delectus et eius harum rem unde velit consectetur assumenda sapiente aspernatur quos inventore. Fugit nobis ratione animi eaque placeat, quisquam sint error, distinctio magni doloribus dignissimos sed nihil laborum ipsa adipisci, nulla. Quas qui earum tempore incidunt? Facere id, cum illo eveniet error doloremque vero consequuntur iusto accusamus laboriosam asperiores culpa officiis temporibus veritatis perspiciatis maxime rem eligendi expedita molestias voluptatibus hic fugiat amet animi. Quidem dolores soluta, molestias optio, magnam animi reprehenderit laborum ullam quia sunt repellat culpa maxime inventore error architecto nulla itaque quas dolorum mollitia molestiae tempora voluptatem. Placeat consectetur totam, in libero magnam amet. Rerum reprehenderit minima facilis explicabo delectus. Tempore, ab, animi. Aperiam repellendus, repellat! Asperiores, deserunt, inventore? Error, quas, magni unde in vitae nulla neque vel, numquam fugit, dolor perferendis reiciendis aspernatur soluta laborum dignissimos. Deserunt repellendus officiis delectus quas in fugiat, illo quasi culpa cumque architecto velit temporibus laboriosam expedita. Saepe deleniti ex cupiditate illo dolorem accusamus repellendus repudiandae ullam debitis placeat possimus accusantium voluptatum vel ratione voluptate quam, aliquid, totam mollitia aperiam quo quasi aspernatur atque eveniet vero. Accusantium eius quasi nam voluptates vel praesentium doloribus maiores est natus rerum officia voluptate adipisci sequi, soluta consequuntur. Non nulla accusamus magnam culpa sit, vitae ratione delectus obcaecati rem possimus vero debitis excepturi veritatis impedit sed modi illum cupiditate corrupti quaerat mollitia corporis dolorem rerum minima tempore. Vel in mollitia at est voluptas ratione saepe quis minima omnis numquam aspernatur quaerat fugiat dignissimos, debitis harum asperiores, inventore, iusto tempore? Quas aperiam nihil sapiente, cumque nemo dignissimos atque iusto, mollitia sequi. Ad ipsam eligendi commodi aliquid architecto odio, cumque, minima ab, dignissimos sit saepe, non? Suscipit, alias harum officia optio! Delectus illum, corporis ad tempore eaque distinctio itaque beatae dolore eos sapiente ea tempora maxime expedita, excepturi consequatur officiis temporibus veniam aperiam. Minima, quisquam obcaecati libero enim, cum ullam, illo magnam odio pariatur maiores ea rerum earum temporibus modi cupiditate ipsam doloribus, reprehenderit id. Velit tempora veniam minima officiis ducimus, officia magnam doloribus pariatur, placeat, voluptatibus cumque! Quasi minima dolorem minus, reiciendis dolores a ex! Nostrum explicabo in debitis eos reiciendis, libero ad quasi provident ea autem aperiam maxime aspernatur obcaecati iure consectetur, earum non quis quod doloremque accusamus nihil eveniet porro. Quaerat, expedita ullam. Obcaecati asperiores eligendi ullam odio magnam. Nisi praesentium in quidem sint dolore earum officiis at unde labore est voluptates inventore, voluptate placeat dolorum doloremque odit! Quaerat nihil laborum, quidem, voluptatibus ea praesentium, magni necessitatibus aperiam cupiditate maiores modi ut fugiat voluptatum libero. Deleniti, voluptate, nemo! Dolores sit exercitationem provident, odit accusamus nemo numquam nulla a, sunt iste magnam aperiam aliquam, quaerat, possimus! Consequatur autem ipsa unde quibusdam tenetur laborum, recusandae quod, aliquam aliquid asperiores, repudiandae qui. Porro impedit recusandae, aliquid autem facere excepturi atque, modi illum aspernatur eius expedita.
+              </div>
+            </article>
+          </div>
+      </div>
+    </section>
+    <section class="quick-links">
+      <div class="container">
+        <div class="row">
+         <div class="quick-links__body col-lg-5 text-center text-lg-left">
+            <div class="row">
+              <div class="quick-links__column column col-6">
+                <div class="column__title">
+                  Company
+                </div>
+                <div class="column__list">
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="quick-links__column column col-6">
+                <div class="column__title">
+                  Company
+                </div>
+                <div class="column__list">
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="quick-links__column column col-6">
+                <div class="column__title">
+                  Company
+                </div>
+                <div class="column__list">
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="quick-links__column column col-6">
+                <div class="column__title">
+                  Company
+                </div>
+                <div class="column__list">
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quick-links__images col-lg-7 text-center text-lg-left">
+            <div class="row">
+              <div class="quick-links__image col-6">
+                <img src="img/footer-img1.png" alt="links">
+              </div>
+              <div class="quick-links__image col-6">
+                <img src="img/footer-img2.png" alt="links">
+              </div>
+              <div class="quick-links__image col-6">
+                <img src="img/footer-img3.png" alt="links">
+              </div>
+              <div class="quick-links__image col-6">
+                <img src="img/footer-img4.png" alt="links">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+          <ul class="list-group footer__list">
+            <li class="list-group-item order-4 order-md-1"><span>© 2022 Theme by psdfreebies.com</span></li>
+            <li class="list-group-item order-1 order-md-2"><a href="#">Privacy</a></li>
+            <li class="list-group-item order-2 order-md-3"><a href="#">Terms of Use</a></li>
+            <li class="list-group-item order-3 order-md-4"><a href="#">Site Map</a></li>
+          </ul>
+      </div>
+    </footer>
+		<script src="js/jquery-3.5.1.min.js" ></script> <!-- С официального сайта -->
+		<script src="js/popper.min.js"></script>
+		<script src="dist/js/bootstrap.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/main.js"></script>
+	</body>
+</html>
